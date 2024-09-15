@@ -1,0 +1,79 @@
+.rect-card {
+  height: 78px;
+  display: flex;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: background-color 1s;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.rect-card .rect-card-left img {
+  height: 100%;
+}
+
+.rect-card .rect-card-right {
+  padding: 0 16px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rect-card .rect-card-right h4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rect-card .rect-card-right .play-btn {
+  width: 54px;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.rect-card .rect-card-right .play-btn ion-icon {
+  font-size: 52px;
+  color: #57b65f;
+}
+
+.rect-card .rect-card-right .play-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background: #000;
+  z-index: -1;
+}
+
+.rect-card .rect-card-right .play-btn:hover ion-icon {
+  font-size: 54px;
+}
+
+.rect-card:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.rect-card:hover .rect-card-right .play-btn {
+  opacity: 1;
+}
+
+/* Mobile Screen */
+@media screen and (max-width: 540px) {
+  .rect-card {
+    height: 52px;
+  }
+
+  .rect-card .rect-card-right {
+    padding: 0 10px;
+  }
+
+  .rect-card .rect-card-right .play-btn {
+    display: none;
+  }
+}

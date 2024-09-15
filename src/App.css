@@ -1,0 +1,58 @@
+.app {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app .main {
+  height: calc(100vh - 90px);
+  width: 100%;
+  display: flex;
+}
+
+/* General */
+/* Sliders: Song bar + Volume bar */
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background: #fff; /* inserted using JS: linear-gradient(to right, #fff 0%, #fff ${percentage}%, #ffffff66 ${percentage}%, #ffffff66 100%) */
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fff;
+  display: none;
+}
+
+.slider::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fff;
+  display: none;
+}
+
+.slider:hover {
+  --slider-color: #57b65f;
+}
+
+.slider:hover::-webkit-slider-thumb {
+  display: block;
+}
+
+.slider:hover::-moz-range-thumb {
+  display: block;
+}
+
+/* Mobile Screen */
+@media screen and (max-width: 540px) {
+  .app .main {
+    height: calc(100vh - 70px);
+  }
+}

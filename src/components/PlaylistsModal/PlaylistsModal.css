@@ -1,0 +1,67 @@
+.playlists-modal {
+  padding: 14px;
+  height: 75vh;
+  width: 80vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  border-radius: 5px;
+  background: #2a2a2a;
+}
+
+.playlists-modal .search {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  border-radius: 4px;
+  background: #5c5a60;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.playlists-modal .search ion-icon {
+  font-size: 16px;
+}
+
+.playlists-modal .search input,
+.playlists-modal .search input:hover,
+.playlists-modal .search input:active {
+  margin-top: 2px;
+  width: 100%;
+  font-size: 14px;
+  color: inherit;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.playlists-modal .search input::placeholder {
+  color: inherit;
+}
+
+.playlists-modal .playlists {
+  padding-top: 4px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+  overflow-y: scroll;
+}
+
+.playlists-modal .playlists li {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 14px;
+}
+
+.playlists-modal .playlists li img {
+  height: 100%;
+  border-radius: 4px 0 0 4px;
+}
