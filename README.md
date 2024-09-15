@@ -27,3 +27,8 @@ npm start
 
 
 ## Screeenshots
+
+![Screenshot 2024-09-15 215202](https://github.com/user-attachments/assets/51c36bc7-384e-4b16-a526-ec2bbeafba07)
+
+
+![Screenshot 2024-09-15 215223](https://github.com/user-attachments/assets/659bcd0a-95d0-423f-acdf-79107cada0b0)
